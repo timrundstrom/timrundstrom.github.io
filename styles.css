@@ -11,18 +11,12 @@ body{
     background: #FF675A;
 }
 
-
-
-
-
-
-
 /*  MAIN GRID   */
 header {
     grid-area: header;
     background: cadetblue;
-    height: 150px;
-    text-align: center;
+    height: 120px;
+    text-align: left;
 } 
 .webbutv{
     grid-area: webb;
@@ -51,6 +45,42 @@ header {
     font-size: 2em;
     padding: 10px;
 }
+
+
+/*  HEADER GRID */
+.bild{
+    grid-area: bild;
+    width: 100px;
+    margin: auto -40px;
+    margin-left: 10px;
+}
+.headertitle{
+    grid-area: title;
+    font-size: 2.3em;
+    margin: auto 0;
+    text-align: center;
+}
+.headerp{
+    grid-area: p;
+    text-align: center;
+}
+
+
+/*  ARTICLE GRID */
+.projnamn{
+    grid-area: projnamn;
+    font-size: 1.1em;
+    width: 115px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.section-grid .article-grid .bild{
+    width: 70px;
+    margin: 0;
+}
+
+
+/*  CONTAINERS    */
 .grid-container{
     display: grid;
     grid-template-areas: 
@@ -62,77 +92,22 @@ header {
         'gymntitle gymntitle gymntitle gymntitle'
         'gymn gymn gymn gymn';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*  HEADER GRID */
-.bild{
-    grid-area: bild;
-    width: 100px;
-    margin: auto 5px;
-}
-.title{
-    grid-area: title;
-    font-size: 2.3em;
-    margin: auto 0;
-}
-
 .header-grid{
     display: grid;
     grid-template-areas: 
-    'bild title title title';
+    'bild title title title'
+    'bild p p p';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  SECTION GRID    */
-
 .section-grid{
     display: grid;
     grid-template-areas:
     'article article';
 }
-
-/*  ARTICLE GRID */
-.projnamn{
-    grid-area: projnamn;
-    font-size: 1.1em;
-    width: 115px;
-    padding-top: 15px;
-}
 .article-grid{
-    margin: 10px;
+    padding: 20px 10px;
     display: grid;
     grid-template-areas: 
     'bild projnamn';
-}
-.section-grid .article-grid .bild{
-    width: 70px;
-    margin: 0;
 }
 
 
