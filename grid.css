@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+
+header img .logga{
+    grid-area: img;
+}
+header h1{
+    grid-area: title;
+}
+header p{
+    grid-area: tag;
+}
+header{
+    display: grid;
+    grid-template-areas: 
+    'img title title title'
+    'img tag tag tag';
+    grid-area: header;
+}
+.wButton{
+    grid-area: wButton;
+}
+.pButton{
+    grid-area: pButton;
+}
+.gButton{
+    grid-area: gButton;
+}
+footer{
+    display: grid;
+    grid-template-areas: 
+    'wButton pButton gButton';
+    grid-area: footer;
+}
+.ikon{
+    grid-area: ikon;
+}
+.projecttitle{
+    grid-area: projecttitle;
+}
+.projectdate{
+    grid-area: projectdate;
+}
+.article-holder{
+    display: grid;
+    grid-template-areas: 
+    'ikon projecttitle'
+    'ikon projectdate';
+}
+article{
+    grid-area: article;
+}
+section{
+    display: grid;
+    grid-template-areas: 
+    'article';
+}
+.wSection{
+    grid-area: wsection;
+}
+.pSection{
+    grid-area: psection;
+}
+.gSection{
+    grid-area: gsection;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'wsection'
+    'psection'
+    'gsection'
+    'footer';
+}

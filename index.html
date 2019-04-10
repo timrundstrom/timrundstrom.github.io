@@ -4,65 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
     <title>Portfolio</title>
 </head>
-<body class="grid-container">
-
-    <header class="header-grid">
-        <img src="./bilder/logo.png" class="bild">
-        <h1 class="headertitle">Tim's Portfolio</h1>
-        <p class="headerp">GitHub @timrundstrom</p>
-    </header>
+<body>
     
-    <h2 class="sectiontitle webbtitle">Webbutveckling</h2>
-    <section class="webbutv section-grid"> 
-        <article class="article-grid">
-            <img src="./bilder/logo.png" class="bild">
-            <h3 class="projnamn">Globala målen</h3>
-        </article>
+    <header>
+        <img src="./bilder/logo.png" alt="NTI Gymnasiet Logga" class="logga">
+        <h1>Tim's Portfolio</h1>
+        <p>GitHub @timrundstrom</p>
+    </header>
 
-        <article class="article-grid">
-            <img src="./bilder/logo.png" class="bild">
-            <h3 class="projnamn">Lagar</h3>
-        </article>
-
-        <article class="article-grid">
-            <img src="./bilder/logo.png" class="bild">
-            <h3 class="projnamn">Nätets Historia</h3>
-        </article>
-
-        <article class="article-grid">
-            <img src="./bilder/logo.png" class="bild">
-            <h3 class="projnamn">Om mig</h3>
-        </article>
+    <section class="wSection">
+        <h1 class="sectionTitle">Webbutveckling</h1>
+        <div>
+            <article class="article-holder">
+                <img src="./bilder/logo.png" alt="Project ikon" class="ikon">
+                <h2 class="projecttitle">[Projektidé]</h2>
+                <h3 class="projectdate">[Projektidé]</h3>
+            </article>
+        </div>
+        <div>
+            <article class="article-holder">
+                <img src="./bilder/logo.png" alt="Project ikon" class="ikon">
+                <h2 class="projecttitle">[Projektidé]</h2>
+                <h3 class="projectdate">[Projektidé]</h3>
+            </article>
+        </div>
+        <div>
+            <article class="article-holder">
+                <img src="./bilder/logo.png" alt="Project ikon" class="ikon">
+                <h2 class="projecttitle">[Projektidé]</h2>
+                <h3 class="projectdate">[Projektidé]</h3>
+            </article>
+        </div>
+        <div>
+            <article class="article-holder">
+                <img src="./bilder/logo.png" alt="Project ikon" class="ikon">
+                <h2 class="projecttitle">[Projektidé]</h2>
+                <h3 class="projectdate">[Projektidé]</h3>
+            </article>
+        </div>
     </section>
 
-    <h2 class="sectiontitle progtitle">Programmering</h2>
-    <section class="prog section-grid">
-        <article class="article-grid">
-            <img src="./bilder/logo.png" class="bild">
-            <h3 class="projnamn">TBA</h3>
-        </article>
 
-        <article class="article-grid">
-            <img class="bild"></img>
-            <h3 class="projnamn"></h3>
-        </article>
+
+    <section class="pSection">
+            <h1 class="sectionTitle">Programmering</h1>
+            <div>
+                <article class="article-holder">
+                    <img src="./bilder/logo.png" alt="Project ikon" class="ikon">
+                    <h2 class="projecttitle">[Projektidé]</h2>
+                    <h3 class="projectdate">[Projektidé]</h3>
+                </article>
+            </div>
+            <div>
+                <article class="article-holder">
+                    <img src="./bilder/logo.png" alt="Project ikon" class="ikon">
+                    <h2 class="projecttitle">[Projektidé]</h2>
+                    <h3 class="projectdate">[Projektidé]</h3>
+                </article>
+            </div>
+            <div>
+                <article class="article-holder">
+                    <img src="./bilder/logo.png" alt="Project ikon" class="ikon">
+                    <h2 class="projecttitle">[Projektidé]</h2>
+                    <h3 class="projectdate">[Projektidé]</h3>
+                </article>
+            </div>
     </section>
 
-    <h2 class="sectiontitle gymntitle">Gymnasiearbete</h2>
-    <section class="gymnasiearb section-grid">
-        <article class="article-grid">
-            <img src="./bilder/logo.png" class="bild">
-            <h3 class="projnamn">TBA</h3>
-        </article>
 
-        <article class="article-grid">
-            <img class="bild"></img>
-            <h3 class="projnamn"></h3>
-        </article>
+    <section class="gSection">
+        <h1 class="sectionTitle">Gymnasieprojekt</h1>
+        <div>
+            <article class="article-holder">
+                <img src="./bilder/logo.png" alt="Project ikon" class="ikon">
+                <h2 class="projecttitle">[Projektidé]</h2>
+                <h3 class="projectdate">[Projektidé]</h3>
+            </article>
+        </div>
     </section>
+
+    <footer>
+        <div class="wButton">WEBB</div>
+        <div class="pButton">PROG</div>
+        <div class="gButton">GYMN</div>
+    </footer>
 
 </body>
 </html>
