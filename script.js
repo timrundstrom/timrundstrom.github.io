@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $("#wButton").click(function(){
+        $("#pSection").hide();
+        $("#gSection").hide();
+        $("#wSection").show();
+    });
+    $("#pButton").click(function(){
+        $("#wSection").hide();
+        $("#gSection").hide();
+        $("#pSection").show();
+    });
+    $("#gButton").click(function(){
+        $("#wSection").hide();
+        $("#pSection").hide();
+        $("#gSection").show();
+    });
+});

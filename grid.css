@@ -1,75 +1,91 @@
 @charset "utf-8";
 
+/*  MAIN GRID   */
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+body {
+    display: grid;
+    height: 100%;
+    grid-template-columns:1fr;
+    grid-template-areas:
+                "header"
+                "main"
+                "footer";
 
-header img .logga{
-    grid-area: img;
-}
-header h1{
-    grid-area: title;
-}
-header p{
-    grid-area: tag;
+    grid-template-rows: 100px 1fr 80px;
 }
 header{
-    display: grid;
-    grid-template-areas: 
-    'img title title title'
-    'img tag tag tag';
     grid-area: header;
+    background: green;
 }
-.wButton{
-    grid-area: wButton;
+main{
+    grid-area: main;
+    background: yellowgreen;
 }
-.pButton{
-    grid-area: pButton;
+footer{
+    grid-area: footer;
+    background: yellow;
 }
-.gButton{
-    grid-area: gButton;
+
+/*  HEADER GRID */
+header{
+    display: grid;
+    grid-template-areas:
+    'logo htitle'
+    'logo htag';
+    grid-template-columns: 100px auto;
 }
+header h1{
+    grid-area: htitle;
+}
+header p{
+    grid-area: htag;
+}
+header img{
+    grid-area: logo;
+}
+
+/*  FOOTER GRID  */
 footer{
     display: grid;
     grid-template-areas: 
     'wButton pButton gButton';
-    grid-area: footer;
 }
-.ikon{
-    grid-area: ikon;
+#wButton{
+    grid-area: wButton;
 }
-.projecttitle{
-    grid-area: projecttitle;
+#pButton{
+    grid-area: pButton;
 }
-.projectdate{
-    grid-area: projectdate;
+#gButton{
+    grid-area: gButton;
 }
-.article-holder{
-    display: grid;
-    grid-template-areas: 
-    'ikon projecttitle'
-    'ikon projectdate';
-}
-article{
-    grid-area: article;
-}
+
+/*  SECTION GRID    */
 section{
     display: grid;
-    grid-template-areas: 
-    'article';
+    grid-gap: auto;
+    grid-template-rows: auto auto auto auto auto;
+    height: 100%;
 }
-.wSection{
-    grid-area: wsection;
-}
-.pSection{
-    grid-area: psection;
-}
-.gSection{
-    grid-area: gsection;
-}
-body{
+
+/*  ARTICLE GRID    */
+article{
     display: grid;
     grid-template-areas: 
-    'header'
-    'wsection'
-    'psection'
-    'gsection'
-    'footer';
+    'ikon projt projt'
+    'ikon projd projd';
+}
+article img {
+    grid-area: ikon;
+}
+article h1{
+    grid-area: projt;
+}
+article h2{
+    grid-area: projd;
 }
