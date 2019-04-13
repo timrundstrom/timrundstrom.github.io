@@ -1,17 +1,52 @@
-$(document).ready(function(){
-    $("#wButton").click(function(){
-        $("#pSection").hide();
-        $("#gSection").hide();
-        $("#wSection").show();
+const unmarked = "#333";
+const marked = "#444";
+const marked_border = "#f44";
+const $ws = $("#wSection")
+const $ps = $("#pSection")
+const $gs = $("#gSection")
+const $wb = $("#wButton")
+const $pb = $("#pButton")
+const $gb = $("#gButton")
+
+$(function(){
+    $ws.show();
+    $wb.css("border-color", marked_border);
+
+    $wb.click(function(){
+        hideSections();
+        $ws.show();
+        unmarkSection();
+        markBtn($wb);
     });
-    $("#pButton").click(function(){
-        $("#wSection").hide();
-        $("#gSection").hide();
-        $("#pSection").show();
+    $pb.click(function(){
+        hideSections();
+        $ps.show();
+        unmarkSection();
+        markBtn($pb);
     });
-    $("#gButton").click(function(){
-        $("#wSection").hide();
-        $("#pSection").hide();
-        $("#gSection").show();
+    $gb.click(function(){
+        hideSections();
+        $gs.show();
+        unmarkSection();
+        markBtn($gb);
     });
 });
+
+function hideSections(){
+    $ws.hide();
+    $ps.hide();
+    $gs.hide();
+}
+function unmarkSection(){
+    // for loop for easier readability?
+    $wb.css("background-color", unmarked);
+    $wb.css("border-color", "black");
+    $pb.css("background-color", unmarked);
+    $pb.css("border-color", "black");
+    $gb.css("background-color", unmarked);
+    $gb.css("border-color", "black");
+}
+function markBtn($x){
+    $x.css("background-color", marked);
+    $x.css("border-color", marked_border);
+}

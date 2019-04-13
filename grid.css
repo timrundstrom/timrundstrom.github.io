@@ -20,15 +20,12 @@ body {
 }
 header{
     grid-area: header;
-    background: green;
 }
 main{
     grid-area: main;
-    background: yellowgreen;
 }
 footer{
     grid-area: footer;
-    background: yellow;
 }
 
 /*  HEADER GRID */
