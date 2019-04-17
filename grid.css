@@ -16,7 +16,7 @@ body {
                 "main"
                 "footer";
 
-    grid-template-rows: 100px 1fr 80px;
+    grid-template-rows: 90px 1fr 60px;
 }
 header{
     grid-area: header;
@@ -34,7 +34,7 @@ header{
     grid-template-areas:
     'logo htitle'
     'logo htag';
-    grid-template-columns: 100px auto;
+    grid-template-columns: auto auto;
 }
 header h1{
     grid-area: htitle;
