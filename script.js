@@ -8,6 +8,7 @@ const $gs = $("#gSection")
 const $wb = $("#wButton")
 const $pb = $("#pButton")
 const $gb = $("#gButton")
+const $Btn = $(".Btn")
 
 $(function(){
     $ws.show();
