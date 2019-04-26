@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 315px){ /*   Very small screen   */
+    header h1{
+        display: none;
+    }
+    header p{
+        display: none;
+    }
+    header{
+        grid-template-areas: 
+        'bild bild'
+        'bild bild';
+    }
+    header a{
+        grid-area: bild;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    header{
+        height: 140px;
+    }
+    header img{
+        height: 130px;
+    }
+    header h1{
+        font-size: 3em;
+        margin-top: 30px;
+    }
+    header p{
+        margin-top: -55px;
+        font-size: 1.5em;
+    }
+    section .sectionTitle{
+        padding-top: 80px;
+        font-size: 2.3em;
+    }
+    article img{
+        height: 100px;
+        margin-left: 100px;
+    }
+    section article h1{
+        font-size: 2em;
+        width: 300px;
+    }
+    section article h2{
+        font-size: 1.3em;
+        width: 300px;
+    }
+    footer{
+        height: 100%;
+    }
+    footer div{
+        height: 50px;
+        width: 50px;
+    }
+}

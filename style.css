@@ -41,15 +41,18 @@ section .sectionTitle{
 }
 article img{
     height: 70px;
-    padding-left: 40px;
+    padding-left: 25px;
     padding-right: 15px;
     margin: auto 0;
 }
 section article h1{
     font-size: 1.3em;
-    margin-top: 20px;
+    margin-top: 15px;
     font-family: 'Asap', sans-serif;
     width: 200px;
+    border-bottom: 3px solid #F80652;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 section article h2{
     font-size: 0.9em;
