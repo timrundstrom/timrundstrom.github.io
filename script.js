@@ -1,6 +1,7 @@
-const unmarked = "#333";
-const marked = "#444";
-const marked_border = "#f44";
+const unmarked = "#142433";
+const marked = "#101C28";
+const marked_border = "#F80652";
+const unmarked_border = "#222F3F";
 const $ws = $("#wSection")
 const $ps = $("#pSection")
 const $gs = $("#gSection")
@@ -40,11 +41,11 @@ function hideSections(){
 function unmarkSection(){
     // for loop for easier readability?
     $wb.css("background-color", unmarked);
-    $wb.css("border-color", "black");
+    $wb.css("border-color", unmarked_border);
     $pb.css("background-color", unmarked);
-    $pb.css("border-color", "black");
+    $pb.css("border-color", unmarked_border);
     $gb.css("background-color", unmarked);
-    $gb.css("border-color", "black");
+    $gb.css("border-color", unmarked_border);
 }
 function markBtn($x){
     $x.css("background-color", marked);
