@@ -80,9 +80,9 @@ article{
 article img {
     grid-area: ikon;
 }
-article h1{
+article h3{
     grid-area: projt;
 }
-article h2{
+article p{
     grid-area: projd;
 }

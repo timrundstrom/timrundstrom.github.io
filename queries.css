@@ -40,11 +40,11 @@
         height: 100px;
         margin-left: 100px;
     }
-    section article h1{
+    section article h3{
         font-size: 2em;
         width: 300px;
     }
-    section article h2{
+    section article p{
         font-size: 1.3em;
         width: 300px;
     }
