@@ -71,18 +71,18 @@ section{
 }
 
 /*  ARTICLE GRID    */
-article{
+a{
     display: grid;
     grid-template-areas: 
-    'ikon projt projt'
-    'ikon projd projd';
+    'ikon ikon projt projt'
+    'ikon ikon projd projd';
 }
-article img {
+a img {
     grid-area: ikon;
 }
-article h3{
+a h3{
     grid-area: projt;
 }
-article p{
+a p{
     grid-area: projd;
 }

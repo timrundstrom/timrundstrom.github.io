@@ -14,11 +14,12 @@ body{
 header{
     background-color: #101D29;
     border-bottom: 3px solid #F80652;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 header img{
-    height: 80px;
-    padding-top: 5px;
+    height: 75px;
+    padding-top: -10px;
     padding-left: 5px;
 }
 header h1{
@@ -27,7 +28,7 @@ header h1{
     margin-right: 20px
 }
 header p{
-    margin-top: -35px;
+    margin-top: -40px;
     font-size: 1em;
     margin-right: 20px
 }
@@ -39,13 +40,13 @@ section .sectionTitle{
     font-size: 1.5em;
     padding-top: 5px;
 }
-article img{
+a img{
     height: 70px;
-    padding-left: 25px;
+    padding-left: 50px;
     padding-right: 15px;
     margin: auto 0;
 }
-section article h3{
+section a h3{
     font-size: 1.3em;
     margin-top: 15px;
     font-family: 'Asap', sans-serif;
@@ -54,13 +55,15 @@ section article h3{
     border-radius: 10px;
     margin-bottom: 10px;
 }
-section article p{
+section a p{
     font-size: 0.9em;
     width: 200px;
 }
 
-article{
+a{
     height: 100px;
+    text-decoration: none;
+    color: #E9F0F7;
 }
 
 
@@ -76,7 +79,8 @@ article{
 footer{
     background-color: #101D29;
     border-top: 3px solid #F80652;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 footer div{
     border: 2px solid #222F3F;
@@ -94,7 +98,7 @@ footer div{
 
 
 
-article:hover{
+a:hover{
     background-color: #101C28;
 }
 div:hover{
