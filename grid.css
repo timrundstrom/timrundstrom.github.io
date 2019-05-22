@@ -16,7 +16,7 @@ body {
                 "main"
                 "footer";
 
-    grid-template-rows: 90px 1fr 60px;
+    grid-template-rows: 90px auto 90px;
 }
 header{
     grid-area: header;
@@ -64,8 +64,7 @@ footer{
 
 /*  SECTION GRID    */
 section{
-    display: grid;
-    grid-gap: auto;
+    display: grid;  
     grid-template-rows: auto auto auto auto auto;
     height: 100%;
 }

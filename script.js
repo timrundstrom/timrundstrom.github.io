@@ -1,42 +1,35 @@
 const unmarked = "#142433";
 const marked = "#101C28";
-const marked_border = "#F80652";
-const unmarked_border = "#222F3F";
-const $ws = $("#wSection")
-const $ps = $("#pSection")
-const $gs = $("#gSection")
-const $wb = $("#wButton")
-const $pb = $("#pButton")
-const $gb = $("#gButton")
-const $Btn = $(".Btn")
+const markedBorder = "#F80652";
+const unmarkedBorder = "#222F3F";
 
 $(function(){
-    $ws.show();
-    $wb.css("border-color", marked_border);
+    $("#wSection").show();
+    $("#wButton").css("border-color", markedBorder);
 
-    $wb.click(function(){
-        $Btn.removeClass("marked");
+    $("#wButton").click(function(){
+        $(".Btn").removeClass("marked");
         $(this).addClass("marked");
         hideSections();
-        $ws.show();
+        $("#wSection").show();
         unmarkSection();
-        markBtn($wb);
+        markBtn($("#wButton"));
     });
-    $pb.click(function(){
-        $Btn.removeClass("marked");
+    $("#pButton").click(function(){
+        $(".Btn").removeClass("marked");
         $(this).addClass("marked");
         hideSections();
-        $ps.show();
+        $("#pSection").show();
         unmarkSection();
-        markBtn($pb);
+        markBtn($("#pButton"));
     });
-    $gb.click(function(){
-        $Btn.removeClass("marked");
+    $("#gButton").click(function(){
+        $(".Btn").removeClass("marked");
         $(this).addClass("marked");
         hideSections();
-        $gs.show();
+        $("#gSection").show();
         unmarkSection();
-        markBtn($gb);
+        markBtn($("#gButton"));
     });
     $(".Btn").mouseenter(function(){
         $(this).css("background-color", marked);
@@ -50,19 +43,19 @@ $(function(){
 });
 
 function hideSections(){
-    $ws.hide();
-    $ps.hide();
-    $gs.hide();
+    $("#wSection").hide();
+    $("#pSection").hide();
+    $("#gSection").hide();
 }
 function unmarkSection(){
-    $wb.css("background-color", unmarked);
-    $wb.css("border-color", unmarked_border);
-    $pb.css("background-color", unmarked);
-    $pb.css("border-color", unmarked_border);
-    $gb.css("background-color", unmarked);
-    $gb.css("border-color", unmarked_border);
+    $("#wButton").css("background-color", unmarked);
+    $("#wButton").css("border-color", unmarkedBorder);
+    $("#pButton").css("background-color", unmarked);
+    $("#pButton").css("border-color", unmarkedBorder);
+    $("#gButton").css("background-color", unmarked);
+    $("#gButton").css("border-color", unmarkedBorder);
 }
 function markBtn($x){
     $x.css("background-color", marked);
-    $x.css("border-color", marked_border);
+    $x.css("border-color", markedBorder);
 }
