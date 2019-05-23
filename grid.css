@@ -6,8 +6,6 @@ html, body{
 }
 body{
     margin: 0;
-}
-body {
     display: grid;
     height: 100%;
     grid-template-columns:1fr;
@@ -16,7 +14,7 @@ body {
                 "main"
                 "footer";
 
-    grid-template-rows: 90px auto 90px;
+    grid-template-rows: 70px auto 50px;
 }
 header{
     grid-area: header;

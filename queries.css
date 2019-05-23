@@ -1,30 +1,37 @@
 @charset "utf-8";
 
+@media only screen and (max-width: 360px){
+    section a img{
+        margin-left: 15px;
+    }
+}
+
 @media only screen and (min-width: 600px){ /* Medium sized screen (Portrait Tablets) */
     header{
         height: 140px;
     }
-    header img{
-        height: 130px;
-        padding-top: 30px;
-        padding-left: 0px;
+    header a img{
+        width: 100px;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 90px;
     }
     header h1{
         font-size: 3em;
-        margin-top: 30px;
-        margin-left: -150px;
+        padding-top: 25px;
+        padding-right: 0;
     }
     header p{
-        margin-top: -35px;
-        margin-left: -150px;
+        margin-top: -45px;
+        padding-right: 0;
         font-size: 1.5em;
     }
     section .sectionTitle{
         padding-top: 80px;
         font-size: 2.3em;
     }
-    a img{
-        height: 100px;
+    section a img{
+        height: 120px;
         margin-left: 50px;
     }
     section a h3{
@@ -35,39 +42,139 @@
         font-size: 1.3em;
         width: 300px;
     }
-    footer{
-        height: 100%;
-    }
     footer div{
         height: 50px;
         width: 50px;
     }
+    footer div img{
+        width: 50px;
+    }
+    body{
+        grid-template-rows: 90px auto 90px;
+    }
 }
 
-@media only screen and (min-width: 600px) and (orientation: landscape){ /* Medium sized screen (Landscape Tablets) */
-    a img{
-        margin-left: 150px;
+@media only screen and (max-height: 600px) and (orientation: landscape){ /* Phone landscape */
+    header{
+        height: 70px;
     }
     header a img{
-        margin-right: -200px;
+        width: 60px;
+        margin-top: 5px;
+        margin-left: 200px;
     }
     header h1{
-        margin-left: -300px;
+        font-size: 1.7em;
+        padding-top: 10px;
+        padding-right: 100px;
     }
     header p{
-        margin-left: -300px;
+        font-size: 0.7em;
+        margin-top: -25px;
+        padding-right: 100px;
+    }
+    section{
+        overflow: scroll;
+    }
+    section .sectionTitle{
+        font-size: 1.5em;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    section a img{
+        width: 60px;
+        height: auto;
+        padding-left: 100px;
+    }
+    section a h3{
+        font-size: 1em;
+        margin-top: 10px;
+        margin-bottom: 60px;
+        width: 200px;
+        margin-left: 40px;
+    }
+    section a p{
+        font-size: 0.7em;
+        margin-top: -50px;
+    }
+    footer div{
+        height: 30px;
+        width: 30px;
+    }
+    footer div img{
+        width: 30px;
+    }
+    body{
+        grid-template-rows: auto 65% 55px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape){ /* Medium sized screen (Landscape Tablets) */
+    section a img{
+        margin-left: 150px;
+        width: 100px;
+        height: auto;
+    }
+    header{
+        height: 100px;
+    }
+    header a img{
+        margin-left: 200px;
+        margin-top: 10px;
+        width: 90px;
+    }
+    header h1{
+        padding-right: 100px;
+        padding-top: 15px;
+        font-size: 2.5em;
+    }
+    header p{
+        font-size: 1em;
+        margin-top: -35px;
+        padding-right: 100px;
+    }
+    body{
+        grid-template-rows: 40px auto 70px;
+    }
+    footer div{
+        height: 40px;
+        width: 40px;
+    }
+    footer div img{
+        width: 40px;
     }
 
 }
 
-@media only screen and (min-width: 992px){
-
-}
-
-@media only screen and (min-width: 992px) and (orientation: landscape){ /* Large sized screen (Laptops) */
-
-}
 
 @media only screen and (min-width: 1200px) and (orientation: landscape){ /* Extra large sized screen (Desktops) */
+    header a img{
+        padding-left: 300px;
+    }
+    header h1{
+        padding-right: 500px;
+    }
+    header p{
+        padding-right: 500px;
+    }
+    section a img{
+        padding-left: 400px;
+        width: 120px;
+        height: auto;
+    }
+    section a{
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    body{
+        grid-template-rows: 40px auto 100px;
+    }
+    footer div{
+        height: 60px;
+        width: 60px;
+    }
+    footer div img{
+        width: 60px;
+    }
 
 }
