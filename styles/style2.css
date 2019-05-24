@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+table, th, td {
+    border: 1px solid black;
+    font-family: Verdana;
+    font-size: 95%;
+}
+h1 { 
+    color: black;
+    background-color: cadetblue;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    width: 530px;
+    border: 1px solid black;
+    padding: 5px;
+}
+div.infobox{
+    position: absolute;
+    width: 380px;
+    border: 1px solid black;
+    background-color: rgb(125, 170, 172);
+    right: 15px;
+    top: 30px;
+}
+div.inforubrik{
+    position: relative;
+    left: 15px;
+    font-weight: bold;
+}
+img.infobild{
+    border: 1px solid black;
+    position: relative;
+    left: 5px;
+}
+div.info{
+    position: absolute;
+    left: 115px;
+    top: 15px;
+}
+#titelLag{
+    width: 660px;
+}
+#titelHistoria{
+    width: 370px;
+}
+h2 {
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    background-color: white;
+}
+.stycke{
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: rgb(125, 170, 172);
+    font-size: 15px;
+    width: 640px;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 5px;
+}
+ol{
+    font-family: Verdana;
+    padding-left: 30px; 
+}
+#bildLag{
+    width: 200px;
+    height: 200px;
+}
+#jul{
+    text-align: center;
+    color: crimson;
+}
+.jul{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+div.spelbilder{
+    position: absolute;
+    top: 200px;
+    right: 0;
+}

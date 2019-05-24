@@ -2,7 +2,32 @@
 
 @media only screen and (max-width: 360px){
     section a img{
-        margin-left: 15px;
+        padding-left: 15px;
+        height: 50px;
+    }
+}
+@media only screen and (max-height: 360px){
+    header h1{
+        width: 200px;
+        padding-left: 25px;
+    }
+    header p{
+        padding-left: 25px;
+    }
+    section a h3{
+        margin-right: 200px;
+    }
+    section a p{
+        margin-left: 40px;
+    }
+    body{
+        grid-template-rows: 65px auto 40px;
+    }
+    footer div{
+        width: 40px;
+    }
+    footer div img{
+        width: 40px;
     }
 }
 
@@ -19,11 +44,11 @@
     header h1{
         font-size: 3em;
         padding-top: 25px;
-        padding-right: 0;
+        padding-right: 200px;
     }
     header p{
         margin-top: -45px;
-        padding-right: 0;
+        padding-right: 200px;
         font-size: 1.5em;
     }
     section .sectionTitle{
@@ -31,12 +56,13 @@
         font-size: 2.3em;
     }
     section a img{
-        height: 120px;
-        margin-left: 50px;
+        height: 100px;
+        margin-left: 20px;
     }
     section a h3{
         font-size: 2em;
         width: 300px;
+        margin-right: 150px;
     }
     section a p{
         font-size: 1.3em;
@@ -61,17 +87,17 @@
     header a img{
         width: 60px;
         margin-top: 5px;
-        margin-left: 200px;
+        margin-left: 120px;
     }
     header h1{
         font-size: 1.7em;
         padding-top: 10px;
-        padding-right: 100px;
+        padding-right: 220px;
     }
     header p{
         font-size: 0.7em;
         margin-top: -25px;
-        padding-right: 100px;
+        padding-right: 220px;
     }
     section{
         overflow: scroll;
@@ -110,11 +136,7 @@
 }
 
 @media only screen and (min-width: 992px) and (orientation: landscape){ /* Medium sized screen (Landscape Tablets) */
-    section a img{
-        margin-left: 150px;
-        width: 100px;
-        height: auto;
-    }
+
     header{
         height: 100px;
     }
@@ -124,14 +146,22 @@
         width: 90px;
     }
     header h1{
-        padding-right: 100px;
+        padding-right: 350px;
         padding-top: 15px;
         font-size: 2.5em;
     }
     header p{
         font-size: 1em;
         margin-top: -35px;
-        padding-right: 100px;
+        padding-right: 350px;
+    }
+    section a img{
+        margin-left: 100px;
+        width: 100px;
+        height: auto;
+    }
+    section a h3{
+        margin-right: 250px;
     }
     body{
         grid-template-rows: 40px auto 70px;
@@ -146,25 +176,27 @@
 
 }
 
-
 @media only screen and (min-width: 1200px) and (orientation: landscape){ /* Extra large sized screen (Desktops) */
     header a img{
         padding-left: 300px;
     }
     header h1{
-        padding-right: 500px;
+        padding-right: 750px;
     }
     header p{
-        padding-right: 500px;
+        padding-right: 750px;
     }
     section a img{
         padding-left: 400px;
         width: 120px;
         height: auto;
     }
+    section a h3{
+        margin-right: 600px;
+    }
     section a{
         padding: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 35px;
     }
     body{
         grid-template-rows: 40px auto 100px;
